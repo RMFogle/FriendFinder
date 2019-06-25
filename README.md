@@ -2,84 +2,49 @@
 Homework week-13
 
 
-Submission on BCS
-
-Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
-
-Instructions:
-
-Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
-Your server.js file should require the basic npm packages we've used in class: express and path.
-Your htmlRoutes.js file should include two routes:
-
-A GET Route to /survey which should display the survey page.
-A default, catch-all route that leads to home.html which displays the home page.
+The FriendFinder app is a basic dating app. It's a full-stake site that will take in user inputs from a survey and then compare their answers with other users. Then the app will display the results: name and picture of the user with the best overall match. 
 
 
-Your apiRoutes.js file should contain two routes:
+Heroku deployed app link: https://still-coast-70044.herokuapp.com/ 
 
-A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
-A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+issues: 
 
-
-You should save your application's data inside of app/data/friends.js as an array of objects. Each of these objects should roughly follow the format below.
-
-
-{
-  "name":"Ahmed",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-      5,
-      1,
-      4,
-      4,
-      5,
-      1,
-      2,
-      5,
-      4,
-      1
-    ]
-}
-
-Determine the user's most compatible friend using the following as a guide:
+  1.) Having trouble with deploying app to Heroku. 
+  2.) Modal is always displayed. It's not toggling between hide and show. 
+  3.) App is not displaying best match data. 
 
 
-Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
-With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the totalDifference.
+Home page displays.
+![Screenshot_1](images/Screenshot_1.1.png)
+
+Survey page displays.
+![Screenshot_2](images/Screenshot_1.2.png)
+
+Input form fields and questions function.
+![Screenshot_3](images/Screenshot_1.3.png)
+
+If all fields are not filled out alert displays. 
+![Screenshot_4](images/Screenshot_1.4.png)
+
+api/friends displays when clicked on link, link to github repo works as well. 
+![Screenshot_5](images/Screenshot_1.5.png)
 
 
-Example:
 
-User 1: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+Tech Used: 
 
-User 2: [3, 2, 6, 4, 5, 1, 2, 5, 4, 1]
+    1. Node.js 
+    2. Express.js 
+    3. Heroku
+    4. Node_Modules: express, path. 
 
-Total Difference: 2 + 1 + 2 = 5
+Built With: 
 
+    VS Code 
 
-Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both 5-3 and 3-5 as 2, and so on.
-The closest match will be the user with the least amount of difference.
+Authors: 
 
-Once you've found the current user's most compatible friend, display the result as a modal pop-up.
-
-The modal should display both the name and picture of the closest match.
-
-
-Reminder: Submission on BCS
-Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
+    Ryan Fogle 
 
 
-Hosting on Heroku
-Now that we have a backend to our applications, we use Heroku for hosting. Please note that while Heroku is free, it will request credit card information if you have more than 5 applications at a time or are adding a database.
-Please see Heroku’s Account Verification Information for more details.
-See the Supplemental Heroku Deployment Guide for in-detail deployment instructions.
-
-Create a README.md
-Add a README.md to your repository describing the project. Here are some resources for creating your README.md. Here are some resources to help you along the way:
-About READMEs
-Mastering Markdown
-
-
-Heroku deployed app link: https://still-coast-70044.herokuapp.com/
 
