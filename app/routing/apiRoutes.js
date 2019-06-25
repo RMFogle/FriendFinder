@@ -35,17 +35,22 @@ module.exports = function (app) {
         }
 
         //loop through friends score and user score to calculate the difference 
+        for (var j = 0; j < 10; j++) {
+            totalDifference += Math.abs(parseInt(userScore[j]) - parseInt(friends[i].scores[j])); 
 
+            if (totalDifference <= bestMatch.friendDifference) {
 
-        // calculate the difference between both user and friends score 
+                bestMatch.name = friends[i].name;
+                bestMatch.photo = friends[i].name; 
+                bestMatch.friendDifference = totalDifference; 
+            }
+        }
 
-    
+        // show or push to save info to database 
+    friends.push(userInfo);
 
-    })
+    res.json(bestMatch); 
 
-    // show or push to save info to database 
+});
 
-
-
-
-}
+};
