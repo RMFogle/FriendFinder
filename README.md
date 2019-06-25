@@ -2,7 +2,7 @@
 Homework week-13
 
 
-The FriendFinder app is a basic dating app. It's a full-stake site that will take in user inputs from a survey and then compare their answers with other users. Then the app will display the results: name and picture of the user with the best overall match. 
+The FriendFinder app is a basic dating app. It's a full-stack site that will take in user inputs from a survey and then compare their answers with other users. Then the app will display the results: name and picture of the user with the best overall match. 
 
 
 Heroku deployed app link: https://still-coast-70044.herokuapp.com/ 
