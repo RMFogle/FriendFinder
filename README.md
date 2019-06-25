@@ -7,24 +7,27 @@ The FriendFinder app is a basic dating app. It's a full-stake site that will tak
 
 Heroku deployed app link: https://still-coast-70044.herokuapp.com/ 
 
-issues: 
-
-  1.) Having trouble with deploying app to Heroku. 
-  2.) Modal is always displayed. It's not toggling between hide and show. 
-  3.) App is not displaying best match data. 
+Issues: 
+1.) Having trouble with deploying app to Heroku. 
+2.) Modal is always displayed. It's not toggling between hide and show. 
+3.) App is not displaying best match data. 
 
 
 Home page displays.
 ![Screenshot_1](images/Screenshot_1.1.png)
 
+
 Survey page displays.
 ![Screenshot_2](images/Screenshot_1.2.png)
+
 
 Input form fields and questions function.
 ![Screenshot_3](images/Screenshot_1.3.png)
 
+
 If all fields are not filled out alert displays. 
 ![Screenshot_4](images/Screenshot_1.4.png)
+
 
 api/friends displays when clicked on link, link to github repo works as well. 
 ![Screenshot_5](images/Screenshot_1.5.png)
