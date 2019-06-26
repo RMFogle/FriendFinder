@@ -9,8 +9,7 @@ Heroku deployed app link: https://still-coast-70044.herokuapp.com/
 
 Issues: 
 1.) Having trouble with deploying app to Heroku. 
-2.) Modal is always displayed. It's not toggling between hide and show. 
-3.) App is not displaying best match data. 
+2.) App is not displaying the modal with best match data. 
 
 
 Home page displays.
