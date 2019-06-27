@@ -23,13 +23,10 @@ module.exports = function (app) {
         // Info from user survey submission 
         var userInfo = req.body; 
         var userScore = userInfo.scores; 
-        // Holds data from users submitted name and photo
-        var userName = userInfo.name; 
-        var userPhoto = userInfo.photo; 
         // variable used to calculate the total Difference between the users scores and the friends. 
         var totalDifference = 0; 
         // loop through friends data 
-        for (var i = o; i < friends.length - 1; i++) {
+        for (var i = 0; i < friends.length - 1; i++) {
             console.log(friends[i].name); 
             totalDifference = 0; 
         }
