@@ -8,7 +8,7 @@ The FriendFinder app is a basic dating app. It's a full-stack site that will tak
 Heroku deployed app link: https://still-coast-70044.herokuapp.com/ 
 
 Issues: 
-1.) Having trouble with deploying app to Heroku. 
+1.) App returns same name for best match results regardless of user input. It always returns the third name in the object/array "Casey Park". Issue with most likey with my 'post request' in my 'apiRoutes.js' which is located in the 'routing' folder. 
 
 
 Home page displays.
